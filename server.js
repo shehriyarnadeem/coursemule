@@ -39,12 +39,7 @@ app.use(upload.any()); // Use multer to handle multipart/form-data
 // if(process.env.NODE_ENV==='production'){
 app.use(express.static('front/out'));
 //}
-app.use(
-  cors({
-    origin: "http://localhost:3000", // <-- location of the react app were connecting to
-    credentials: true,
-  })
-);
+app.use(cors());
 
 app.use(
   session({
