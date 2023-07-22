@@ -41,7 +41,6 @@
     "vercel": "^23.1.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
     "postcss": "^8.4.6",
     "tailwindcss": "^3.0.18"
   }
