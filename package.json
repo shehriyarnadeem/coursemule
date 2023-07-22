@@ -7,10 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "local": "npx nodemon server.js",
     "build":"cd front && npm run export",
-    "install": "cd front && rm -rf node_modules && npm install --legacy-peer-deps",
-    "heroku-postbuild": "npm run install && npm run build",
+    "install-modules": "cd front  && npm install --force",
+    "heroku-postbuild": "npm run install-modules && npm run build",
     "start": "node server.js"
   },
+  "engines": {
+    "node": "14.18.0",
+    "npm": "6.14.15"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
