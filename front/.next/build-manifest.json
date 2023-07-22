@@ -1,0 +1,54 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/Rq8gpS0iCSI7VwIYskzv1/_buildManifest.js",
+    "static/Rq8gpS0iCSI7VwIYskzv1/_ssgManifest.js"
+  ],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-a63bf3d8fdf990c639c1.js",
+      "static/chunks/framework-2191d16384373197bc0a.js",
+      "static/chunks/main-62b8caa3ccc47893b147.js",
+      "static/chunks/pages/index-79119edc56f93f616785.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-a63bf3d8fdf990c639c1.js",
+      "static/chunks/framework-2191d16384373197bc0a.js",
+      "static/chunks/main-62b8caa3ccc47893b147.js",
+      "static/css/7e9367678d1efc5043fa.css",
+      "static/chunks/pages/_app-398cee532c1f4a5a115f.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-a63bf3d8fdf990c639c1.js",
+      "static/chunks/framework-2191d16384373197bc0a.js",
+      "static/chunks/main-62b8caa3ccc47893b147.js",
+      "static/chunks/pages/_error-737a04e9a0da63c9d162.js"
+    ],
+    "/course/[courseId]": [
+      "static/chunks/webpack-a63bf3d8fdf990c639c1.js",
+      "static/chunks/framework-2191d16384373197bc0a.js",
+      "static/chunks/main-62b8caa3ccc47893b147.js",
+      "static/css/fa386734ce7b050a4dbc.css",
+      "static/chunks/pages/course/[courseId]-52fac8b0b3cf565fcd4f.js"
+    ],
+    "/login": [
+      "static/chunks/webpack-a63bf3d8fdf990c639c1.js",
+      "static/chunks/framework-2191d16384373197bc0a.js",
+      "static/chunks/main-62b8caa3ccc47893b147.js",
+      "static/chunks/962-bbaec507e71e2b591205.js",
+      "static/chunks/pages/login-44bd8644bf887595811f.js"
+    ],
+    "/signUp": [
+      "static/chunks/webpack-a63bf3d8fdf990c639c1.js",
+      "static/chunks/framework-2191d16384373197bc0a.js",
+      "static/chunks/main-62b8caa3ccc47893b147.js",
+      "static/chunks/962-bbaec507e71e2b591205.js",
+      "static/chunks/pages/signUp-771b6e360270748c9379.js"
+    ]
+  },
+  "ampFirstPages": []
+}

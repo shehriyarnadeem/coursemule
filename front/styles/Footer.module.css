@@ -1,0 +1,8 @@
+.footer {
+    @apply p-10 footer 
+          text-neutral-content 
+          h-[24rem]  
+          dark:bg-footer 
+          bg-footer 
+          drop-shadow-2xl
+}

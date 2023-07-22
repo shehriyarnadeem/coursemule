@@ -1,0 +1,76 @@
+
+.reactMarkDown {
+  @apply  lg:p-0 md:p-0 p-2 lg:mt-20 md:mt-20;
+}
+  
+.reactMarkDown p {
+   @apply my-6 text-blogTextColor leading-10 lg:leading-8 lg:text-[20px] md:text-[20px] text-[25px] mb-[1em] list-disc mt-[1em]  font-ubuntu;
+}
+
+:global(.dark) .reactMarkDown p {
+  @apply text-blogTextColor 
+}
+
+.reactMarkDown > h1 {
+  @apply text-3xl text-blue-400   font-extrabold;
+  
+ }
+
+ :global(.dark) .reactMarkDown > h1 {
+  @apply text-green-200
+}
+
+
+.reactMarkDown > h2 {
+ @apply text-3xl text-blue-400   font-extrabold;
+ 
+}
+
+:global(.dark) .reactMarkDown > h2  {
+  @apply text-green-400
+}
+
+
+.reactMarkDown > h3 {
+  @apply  text-blue-400 lg:text-xl md:text-xl text-2xl font-extrabold;
+  
+ }
+
+ :global(.dark) .reactMarkDown > h3  {
+  @apply text-green-400
+}
+ 
+.reactMarkDown > p > strong {
+  @apply text-[18px] text-blue-400  font-extrabold
+  
+ }
+
+ :global(.dark) .reactMarkDown > p > strong {
+  @apply text-green-400
+}
+
+ .reactMarkDown > ul   {
+  list-style:decimal;
+   @apply text-gray-800
+ } 
+ 
+ :global(.dark) .reactMarkDown > ul {
+  @apply text-green-400
+}
+
+ .reactMarkDown > ol   {
+  list-style:decimal;
+  @apply text-gray-800 font-ubuntu text-2xl lg:text-xl md:text-xl
+} 
+
+:global(.dark) .reactMarkDown > ol {
+  @apply text-blogTextColor 
+}
+
+.reactMarkDown > p > img   {
+  @apply rounded-lg border-2  border-gray-700 p-1 mt-3 cursor-pointer
+} 
+
+:global(.dark) .reactMarkDown > p > img  {
+  @apply border-white
+}

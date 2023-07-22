@@ -1,0 +1,112 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+
+  body {
+    @apply dark:bg-primary bg-primary min-w-min
+     overflow-x-hidden;
+    
+  }
+
+  h1 {
+    @apply leading-tight   dark:text-forePrimary text-gray-400 mt-4 ;
+  }
+
+  h2 {
+    @apply leading-tight lg:mt-0  sm:text-left md:text-center lg:text-left font-poppins dark:text-forePrimary text-gray-400 mb-4;
+  }
+
+  h3 {
+    @apply leading-tight text-black dark:text-white ;
+  }
+
+  h4 {
+    @apply leading-tight font-light font-serif mt-4 ;
+  }
+  pre {
+    @apply dark:bg-gray-900 bg-green-900 p-10 overflow-x-auto mt-10 mb-5  border bg-opacity-5 text-[17px];
+  }
+  
+}
+
+@layer utilities {
+  code {
+    @apply dark:text-white text-black overflow-scroll
+    
+  }
+}
+
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-blue-100: #e8f2ff;
+  --color-blue-500: #4b96ff;
+  --color-blueGray-500: #a9adc1;
+  --color-gray-100: #f7f7f7;
+  --color-gray-200: #e6e9ee;
+  --color-gray-300: #dde0e4;
+  --color-gray-400: #818890;
+  --color-gray-500: #535661;
+  --color-gray-600: #4b4c53;
+  --color-gray-700: #3a3d4a;
+  --color-gray-800: #2e3039;
+  --color-gray-900: #1f2028;
+  --color-green-100: #e7f9ed;
+  --color-green-200: white;
+  --color-green-300: #8fa595;
+  --color-green-500: #30c85e;
+  --color-green-600: #68d94a;
+  --color-red-500: #ff4545;
+  --color-yellow-500: #ffd644;
+  --color-green-font-highight: #5ad7be;
+  --color-blue-font-highight: #010a1d;
+  --color-team-unknown: #818890;
+  --color-team-blue: #36a3ff;
+  --color-team-red: #ff4545;
+  /* yellow in light mode is... hard */
+  --color-team-yellow: #a08600;
+  --color-yellow-500: #a08600;
+  --color-fore-primary: hsla(214,32%,91%,var(--tw-text-opacity));
+  --color-green-text: white;
+}
+
+.light {
+  --color-team-unknown: var(--color-black);
+  --bg-primary: var(--color-white);
+  --bg-secondary: var(--color-blue-font-highight);
+  --bg-theme-back: var(--bg-base-100);
+  --bg-footer: #edf2f6;
+  --bg-hover-card: #edf2f6;
+  --bg-alt: var(--color-gray-200);
+  --border-secondary: var(--color-gray-200);
+  --text-fore-primary: var(--color-fore-primary);
+  --text-secondary: var(--color-gray-500);
+  --color-font-highlight: var(--color-blue-font-highight);
+  --color-font-blog: var( --color-gray-500);
+  --color-light-text: var(--color-gray-500);
+}
+
+.dark {
+  --color-team-yellow: #ffd644;
+  --color-yellow-500: #ffd644;
+  --color-team-unknown: var(--color-white);
+  --bg-primary: #151717;
+  --bg-hover-card: #151717;
+  --bg-footer: #151717;
+  --bg-secondary: var(--color-blue-font-highight);
+  --bg-theme-back: var(--bg-base-100);
+  --bg-alt: var(--color-gray-700);
+  --border-secondary: var(--color-gray-600);
+  --text-secondary: var(--color-blueGray-500);
+  --color-font-highlight: var(--color-green-font-highight);
+  --color-font-blog: var(--color-green-300);
+  --color-dark-text: var(--color-green-text);
+  --color-dark-heading: var(--color-green-200);
+}
+
+.videoJumbotron{
+  box-shadow: 0 7px 10px rgba(255, 255, 255, 0.5);
+}
+

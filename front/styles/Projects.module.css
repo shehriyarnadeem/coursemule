@@ -1,0 +1,6 @@
+.containerDark {
+  @apply dark:bg-green-900 
+          mt-7
+  
+    
+}
