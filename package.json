@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "local": "npx nodemon server.js",
-    "build":"cd front && npm run export",
+    "build": "cd front && npm run export",
     "install-modules": "cd front  && npm cache clean --force && rm -rf node_modules && npm install --force",
     "heroku-postbuild": "npm run install-modules && npm run build",
     "start": "node server.js"
@@ -36,6 +36,7 @@
     "multer-s3": "^2.10.0",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
+    "tailwindcss": "^3.3.3",
     "validate": "^5.2.0"
   },
   "devDependencies": {
