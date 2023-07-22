@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "local": "npx nodemon server.js",
     "build":"cd front && npm run export",
-    "install": "cd front && npm install --force",
+    "install": "cd front && npm install",
     "heroku-postbuild": "npm run install && npm run build",
     "start": "node server.js"
   },
