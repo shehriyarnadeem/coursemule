@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk, createAction  } from '@reduxjs/toolkit'
 import { useSelector, useDispatch } from 'react-redux';
-import axios from 'axios';
+import {get} from './ApiClient'
 
 const initialState = {
     courses: [],
@@ -35,7 +35,7 @@ const initialState = {
     
     dispatch(courseSlice.actions.fetchCoursesStart());
     try {
-      const response = await axios.get('/course');
+      const response = await get('/course');
       dispatch(courseSlice.actions.fetchCoursesSuccess(response.data));
     } catch (error) {
       dispatch(courseSlice.actions.fetchCoursesFailure(error.message));
