@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk, createAction  } from '@reduxjs/toolkit'
 import { useSelector, useDispatch } from 'react-redux';
-import {get} from './ApiClient'
+import {get} from '../../common/ApiClient'
 
 const initialState = {
     courses: [],
