@@ -35,7 +35,7 @@ const initialState = {
     
     dispatch(courseSlice.actions.fetchCoursesStart());
     try {
-      const response = await axios.get('http://localhost:5000/api/course');
+      const response = await axios.get('/course');
       dispatch(courseSlice.actions.fetchCoursesSuccess(response.data));
     } catch (error) {
       dispatch(courseSlice.actions.fetchCoursesFailure(error.message));
