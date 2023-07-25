@@ -37,7 +37,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(upload.any()); // Use multer to handle multipart/form-data
 
 // if(process.env.NODE_ENV==='production'){
-app.use(express.static('front/out'));
+  app.use(express.static('front/out'));
 //}
 app.use(cors());
 

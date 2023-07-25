@@ -36,7 +36,8 @@ const initialState = {
     dispatch(courseSlice.actions.fetchCoursesStart());
     try {
       const response = await get('/course');
-      dispatch(courseSlice.actions.fetchCoursesSuccess(response.data));
+      console.log(response,'response')
+      dispatch(courseSlice.actions.fetchCoursesSuccess(response));
     } catch (error) {
       dispatch(courseSlice.actions.fetchCoursesFailure(error.message));
     }

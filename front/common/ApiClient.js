@@ -20,7 +20,6 @@ const get = async (url, params = null) => {
 const post = async (url, data) => {
 
   const response = await apiClient.post(url,data);
-  console.log(response);
   return response.data;
 };
 
