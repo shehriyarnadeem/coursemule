@@ -16,6 +16,8 @@ export default function index() {
     fetchCourses(dispatch)
   },[]) 
 
+  console.log(courses,'---courses')
+
 
   return (
     <div>

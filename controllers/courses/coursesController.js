@@ -56,6 +56,7 @@ exports.addCourse = async (req, res) => {
 exports.getAllCourses = async (req, res) => {
   // Validate req.body.
   try {
+
    const result =  await getAllCourses();
 
     res.status(200).send({ message: 'Courses Fetched successfully', result });

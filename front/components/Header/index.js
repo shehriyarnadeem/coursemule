@@ -73,7 +73,7 @@ function Header() {
        ):(
 
         <Link  href="/login">
-        <a className="cursor-pointer dark:text-white text-black">Login</a>
+        <p className="cursor-pointer dark:text-white text-black">Login</p>
        </Link>
        )} 
        
