@@ -37,10 +37,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(upload.any()); // Use multer to handle multipart/form-data
 
 // if(process.env.NODE_ENV==='production'){
-  // app.use(express.static('front/out'));
-//}
+  app.use(express.static('front/out'));
+// }
 // Set the allowed origin(s) - Replace '*' with your specific origin
-const allowedOrigins = ['http://localhost:3000'];
+const allowedOrigins = ['http://localhost:3000','https://coursemule-a65e519e93a4.herokuapp.com'];
 const allowedHeaders = ['Authorization', 'Content-Type']; // Add more headers if needed
 
 app.use((req, res, next) => {
